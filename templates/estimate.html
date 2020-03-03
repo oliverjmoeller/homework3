@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2> Loan Calculator </h2>
+<hr />
+
+<form action="" method="POST">
+	<p>
+		<label for="LoanAmount">
+			Loan Amount <input type="text" name="LoanAmount" id="tankRadius" placeholder="full amount of loan" autofocus required>
+		</label>
+	</p>
+
+	<p>
+		<label for="No_of_Payments">
+			Number of Payments:
+			<input type="text" name="NoOfPayments" id="NoOfPayments" placeholder="number of months " required>
+		</label>
+	</p>
+	<p>
+		<label for="Periodic_Interest_Rate">
+			Interest Rate divided by 12 (months)
+			<input type="text" name="InterestRate" id="InterestRate" placeholder="interest rate / 12" required>
+		</label>
+	</p>
+
+
+	<input type="submit" value="Submit">
+s
+	<input type="reset" value="Clear">
+
+</form>
+
+
+
+
+{% endblock %}
