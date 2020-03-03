@@ -29,11 +29,8 @@ def estimate():
         Discount_Factor = (((1+ InterestRate)**NoOfPayments)-1)/((InterestRate * (1+ InterestRate)**NoOfPayments))
         Payment_Amount = Loan_Amount/Discount_Factor
 
-
-        print(Payment_Amount)
-
-
-
+        return render_template('estimate.html', display = Payment_Amount, pageTitle ='Loan Calculation')
+        
     return render_template('estimate.html', pageTitle='Loan Calculation')
 
 if __name__ == '__main__':
